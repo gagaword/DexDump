@@ -1,14 +1,166 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\src\Test.cpp">
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\test\dexdump_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\core\util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\log\log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\core\DexContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\StringPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\ProtoPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\FieldParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\FieldPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\MethodPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\MethodParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\core\DexDump.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\ClassPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\FormatUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\ClassDefsParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\BaseParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\StringPoolParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\HeaderParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\BasePrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\HeaderPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\TypeParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\TypePrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\ProtoParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\CodeParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\CodePrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\DebugInfoPrint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\core\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\log\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\core\DexContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\StringPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\ProtoPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\FieldParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\FieldPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\MethodPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\MethodParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\ClassPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\FormatUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\ClassDefsParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\core\DexDump.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\BaseParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\StringPoolParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\HeaderParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\BasePrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\HeaderPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\TypeParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\TypePrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\ProtoParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\CodeParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\CodePrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\DebugInfoPrint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\ProjectALL\CLionProjects\DexDump\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{21B9C15D-054C-3A81-A3E2-A10948F24EF7}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{23B223AA-2993-39E4-AD7F-940A5C857956}</UniqueIdentifier>
     </Filter>

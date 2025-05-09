@@ -34,25 +34,21 @@
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-    <UseDebugLibraries>true</UseDebugLibraries>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-    <UseDebugLibraries>false</UseDebugLibraries>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-    <UseDebugLibraries>false</UseDebugLibraries>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v143</PlatformToolset>
-    <UseDebugLibraries>false</UseDebugLibraries>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -93,7 +89,6 @@
       <AdditionalIncludeDirectories>D:\ProjectALL\CLionProjects\DexDump\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
@@ -105,7 +100,9 @@
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
@@ -151,7 +148,7 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
@@ -197,7 +194,7 @@
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
-      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
@@ -230,7 +227,6 @@
       <AdditionalIncludeDirectories>D:\ProjectALL\CLionProjects\DexDump\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <LanguageStandard>stdcpp20</LanguageStandard>
@@ -242,7 +238,9 @@
       <UseFullPaths>false</UseFullPaths>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ScanSourceForModuleDependencies>true</ScanSourceForModuleDependencies>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
@@ -328,7 +326,56 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\src\Test.cpp" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\test\dexdump_main.cpp" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\core\util.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\core\util.h" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\log\log.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\log\log.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\core\DexContext.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\core\DexContext.cpp" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\StringPrint.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\StringPrint.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\ProtoPrint.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\ProtoPrint.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\FieldParser.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\FieldParser.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\FieldPrint.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\FieldPrint.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\MethodPrint.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\MethodPrint.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\MethodParser.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\MethodParser.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\core\DexDump.cpp" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\ClassPrint.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\ClassPrint.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\FormatUtil.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\FormatUtil.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\ClassDefsParser.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\ClassDefsParser.h" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\core\DexDump.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\BaseParser.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\BaseParser.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\StringPoolParser.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\StringPoolParser.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\HeaderParser.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\HeaderParser.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\BasePrint.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\BasePrint.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\HeaderPrint.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\HeaderPrint.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\TypeParser.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\TypeParser.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\TypePrint.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\TypePrint.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\src\main.cpp" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\ProtoParser.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\ProtoParser.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\CodeParser.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\parser\CodeParser.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\CodePrint.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\CodePrint.h" />
+    <ClCompile Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\DebugInfoPrint.cpp" />
+    <ClInclude Include="D:\ProjectALL\CLionProjects\DexDump\include\formatter\DebugInfoPrint.h" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
